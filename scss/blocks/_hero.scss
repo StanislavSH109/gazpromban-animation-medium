@@ -72,4 +72,9 @@
     border-radius: 8px;
     background-color: $color-royal-blue-1;
   }
+
+  &__image {
+    transform: scale(1.4) translateX(125%);
+    visibility: hidden;
+  }
 }
