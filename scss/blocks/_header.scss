@@ -12,7 +12,7 @@
 .header {
   padding: 24px 0;
   background-color: $color-white;
-  animation: visible 6s forwards;
+  animation: $visible-3000;
 
   &__wrapper {
     align-items: center;

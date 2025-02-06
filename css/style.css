@@ -425,7 +425,7 @@ textarea {
 .header {
   padding: 24px 0;
   background-color: #ffffff;
-  animation: visible 6s forwards;
+  animation: visible 3s forwards;
 }
 .header__wrapper {
   align-items: center;
@@ -528,10 +528,22 @@ textarea {
   width: 20px;
 }
 
+@keyframes fadeInTitle {
+  0% {
+    opacity: 0;
+    transform: translateY(-30%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+  }
+}
 .hero {
   position: relative;
   overflow: hidden;
   background-color: #F4F6FA;
+  animation: visible 3s forwards;
 }
 .hero__wrapper {
   display: flex;
@@ -547,6 +559,9 @@ textarea {
   font-size: 40px;
   font-weight: 700;
   line-height: 48px;
+  visibility: hidden;
+  transition: transform ease-in 0.3s;
+  animation: fadeInTitle 1s forwards 2s;
 }
 .hero__text {
   margin: 0 0 48px;
@@ -554,10 +569,12 @@ textarea {
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
+  visibility: hidden;
 }
 .hero__buttons {
   display: flex;
   gap: 16px;
+  visibility: hidden;
 }
 .hero__download {
   padding: 18px 32px;
@@ -597,6 +614,9 @@ textarea {
   background-color: #EDEEEF;
 }
 
+.footer {
+  animation: visible 3s forwards;
+}
 .footer__wrapper {
   display: flex;
   align-items: flex-start;
